@@ -66,7 +66,7 @@ EXCLUDED_TRACKERS = ['0day.kiev', '1ptbar', '2 Fast 4 You', '2xFree', '3ChangTra
                      'The Empire', 'The Falling Angels', 'The Geeks', 'The New Retro', 'The Occult',
                      'The Old School (API)', 'The Place', 'The Shinning (API)', 'The Show', 'The Vault', 'The-New-Fun',
                      'TheLeachZone', 'themixingbowl', 'TheRebels (API)', 'TheScenePlace', "Thor's Land", 'TJUPT',
-                     'TLFBits', 'TmGHuB', 'Toca Share', 'Toloka.to', 'ToonsForMe', 'Tornado', 'Torrent Heaven',
+                     'TLFBits', 'TmGHuB', 'Toca Share', 'ToonsForMe', 'Tornado', 'Torrent Heaven',
                      'Torrent Network', 'Torrent Sector Crew', 'Torrent Trader', 'Torrent-Explosiv', 'Torrent-Syndikat',
                      'TOrrent-tuRK', 'Torrent.LT', 'TorrentBD', 'TorrentBytes', 'TorrentCCF', 'TorrentDay', 'TorrentDD',
                      'Torrenteros (API)', 'TorrentHeaven', 'TorrentHR', 'Torrenting', 'Torrentland',
