@@ -284,7 +284,7 @@ async def update_app():
         logger.error(f"Error during update: {e}")
 
 
-@crontab("* * * * *", start=not isDev)
+# @crontab("* * * * *", start=not isDev)
 async def schedule_task():
     await update_app()
 
