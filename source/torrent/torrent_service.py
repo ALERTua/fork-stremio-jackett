@@ -78,7 +78,7 @@ class TorrentService:
         result.magnet = self.__build_magnet(result.info_hash, metadata["info"]["name"], result.trackers)
 
         if "files" not in metadata["info"]:
-            result.file_index = 1
+            result.file_index = 0
             return result
 
         result.files = metadata["info"]["files"]
