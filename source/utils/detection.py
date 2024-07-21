@@ -69,7 +69,8 @@ def detect_languages(torrent_name):
         "nl": r'\b(DUTCH|NL|NLD)\b',
         "hu": r'\b(HUNGARIAN|HU|HUN)\b',
         "la": r'\b(LATIN|LATINO|LA)\b',
-        "multi": r"\b(MULTI)\b"
+        "ua": r'\b(UA|UKR|UKRAINIAN)\b',
+        "multi": r"\b(MULTI|MULTILANG)\b"
     }
 
     languages = []
