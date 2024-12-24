@@ -5,7 +5,7 @@ CACHER_URL = "https://stremio-jackett-cacher.elfhosted.com/"
 
 NO_CACHE_VIDEO_URL = "https://github.com/aymene69/stremio-jackett/raw/main/source/videos/nocache.mp4"
 
-EXCLUDED_TRACKERS = ['0day.kiev', '1ptbar', '2 Fast 4 You', '2xFree', '3ChangTrai', '3D Torrents', '3Wmg', '4thD',
+EXCLUDED_TRACKERS = ['1ptbar', '2 Fast 4 You', '2xFree', '3ChangTrai', '3D Torrents', '3Wmg', '4thD',
                      '52PT', '720pier', 'Abnormal', 'ABtorrents', 'Acid-Lounge', 'Across The Tasman', 'Aftershock',
                      'AGSVPT', 'Aidoru!Online', 'Aither (API)', 'AlphaRatio', 'Amigos Share Club', 'AniDUB',
                      'Anime-Free', 'AnimeBytes', 'AnimeLayer', 'AnimeTorrents', 'AnimeTorrents.ro', 'AnimeWorld (API)',
