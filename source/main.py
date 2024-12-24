@@ -245,6 +245,7 @@ async def get_playback(config: str, query: str, request: Request):
 
 
 async def update_app():
+    return
     try:
         current_version = "v" + VERSION
         url = "https://api.github.com/repos/aymene69/stremio-jackett/releases/latest"
@@ -296,4 +297,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # asyncio.run(main())
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=3000, log_level="info")

@@ -181,13 +181,16 @@ function getLink(method) {
     let stremio_link = `${window.location.host}/${btoa(JSON.stringify(data))}/manifest.json`;
 
     if (method === 'link') {
-        window.open(`stremio://${stremio_link}`, "_blank");
+        const link =`stremio://${stremio_link}`;
+        console.log(link);
+        window.open(link, "_blank");
     } else if (method === 'copy') {
-        const link = window.location.protocol + '//' + stremio_link;
+//        const link = window.location.protocol + '//' + stremio_link;
+        const link =`stremio://${stremio_link}`;
+        console.log(link);
 
         if (!navigator.clipboard) {
             alert('Your browser does not support clipboard');
-            console.log(link);
             return;
         }
 

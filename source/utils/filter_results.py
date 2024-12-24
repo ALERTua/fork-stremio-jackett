@@ -45,18 +45,22 @@ def items_sort(items, config):
 
 def filter_out_non_matching(items, season, episode):
     filtered_items = []
+    season_int = int(season.replace("S", ""))
+    season_pattern = rf"[Сезон|Season)|S][0?{season_int}]"
+
+    episode_int = int(episode.replace("E", ""))
+    episode_pattern = rf"[Епізод|Эпизод|Episode|E][0?{episode_int}]"
+
     for item in items:
-        title = item.title.upper()
-        season_pattern = r'S\d+'
-        episode_pattern = r'E\d+'
+        title = item.title
 
-        season_substrings = re.findall(season_pattern, title)
-        if len(season_substrings) > 0 and season not in season_substrings:
+        season_substrings = re.findall(season_pattern, title, flags=re.I)
+        if not len(season_substrings):
             continue
 
-        episode_substrings = re.findall(episode_pattern, title)
-        if len(episode_substrings) > 0 and episode not in episode_substrings:
-            continue
+        # episode_substrings = re.findall(episode_pattern, title, flags=re.I)
+        # if not len(episode_substrings):
+        #     continue
 
         filtered_items.append(item)
 
