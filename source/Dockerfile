@@ -1,4 +1,4 @@
-FROM python:3.12 AS production
+FROM python:3.12-alpine AS production
 
 WORKDIR /app
 
